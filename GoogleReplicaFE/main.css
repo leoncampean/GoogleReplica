@@ -69,6 +69,7 @@ a:hover {
     ". google-text .";
 }
 #logo {
+    margin-top: 10px;
     grid-area: logo;
     justify-self: center;
     align-self: end;
@@ -132,48 +133,38 @@ a:hover {
     justify-self: center;
     margin-top: 30px;
 }
-#footer {
-    position: absolute;
+/*Footer Hard Update */
+footer {
+	background: #f2f2f2;
     bottom: 0;
-    display: grid;
-    grid-template-columns: 100px 100px 150px 965px 70px 70px 70px;
-    grid-template-rows: 50px;
-    grid-template-areas: 
-    "advertising business hsw . privacy terms settings";
-    background-color: #f2f2f2;
+    position: absolute;
+    width: 99.5%;
 }
-#advertising {
-    grid-area: advertising;
-    justify-self: center;
-    align-self: center;
+footer h4 {
+	color: rgba(0,0,0, 0.54);
+	font-size: 15px;
+	line-height: 8px;
+	font-weight: 400;
+	padding-left: 29px;
+	border: 1px solid #eee;
 }
-#business {
-    grid-area: business;
-    justify-self: center;
-    align-self: center;
+footer a {
+	color: #5f6368;
+	display: inline-block;
+	padding: 12px 11.3px;
+	font-size: 14px;
 }
-#hsw {
-    grid-area: hsw;
-    justify-self: center;
-    align-self: center;
+footer a:hover {
+	text-decoration: underline;
 }
-#privacy {
-    grid-area: privacy;
-    justify-self: center;
-    align-self: center;
+.links {
+	border-top: 1px solid #ddd;
+	display: flex;
 }
-#terms {
-    grid-area: terms;
-    justify-self: center;
-    align-self: center;
+.link-1 {
+	padding-left: 18.7px;
+	flex: 1;
 }
-#settings{
-    grid-area: settings;
-    justify-self: center;
-    align-self: center;
+.link-2 {
+	padding-right: 18.7px;
 }
-/*#romania {
-    grid-area: romania;
-    justify-self: center;
-    align-self: center;
-}*/
