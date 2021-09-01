@@ -2,15 +2,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
-#navbar {
-    display: grid;
-    grid-template-columns:50px 50px 1fr 50px 50px 50px 50px;
-    grid-template-rows: 50px;
-    grid-template-areas: 
-    "about store . gmail images menu sign-in";
-    margin: 0 10px;
-}
 a, p {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.87);
@@ -19,6 +10,14 @@ a, p {
 }
 a:hover {
     text-decoration: underline;
+}
+#navbar {
+    display: grid;
+    grid-template-columns:50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images menu sign-in";
+    margin: 0 20px 0 10px;
 }
 #about {
     grid-area: about;
@@ -59,9 +58,10 @@ a:hover {
     border: 1px solid #4285f4;
 }
 #master {
+    min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px, 70px, 70px, 70px;
+    grid-template-rows: 250px, 200px, 150px, 70px;
     grid-template-areas: 
     ". logo ."
     ". search ."
@@ -71,9 +71,10 @@ a:hover {
 #logo {
     grid-area: logo;
     justify-self: center;
-    align-self: flex-end;
+    align-self: end;
 }
 #search {
+    margin-top: 20px;
     grid-area: search;
     height: 30px ;
     width: 100%;
@@ -93,6 +94,7 @@ a:hover {
     grid-area: flexbox;
     justify-self: center;
     align-self: center;
+    margin-top: 28px;
 }
 #google-search-btn {
     border: none;
@@ -104,7 +106,6 @@ a:hover {
     padding: 10px;
     border-radius: 5px;
 }
-
 #random-search-btn {
     border: none;
     font-size: 15px;
@@ -118,6 +119,7 @@ a:hover {
 #google-text {
     grid-area: google-text;
     justify-self: center;
+    margin-top: 30px;
 }
 #footer {
     position: absolute;
@@ -159,3 +161,8 @@ a:hover {
     justify-self: center;
     align-self: center;
 }
+/*#romania {
+    grid-area: romania;
+    justify-self: center;
+    align-self: center;
+}*/
