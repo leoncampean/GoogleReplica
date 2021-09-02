@@ -23,11 +23,13 @@ a:hover {
     grid-area: about;
     justify-self: center;
     align-self: center;
+    font-size:medium;
 }
 #store {
     grid-area: store;
     justify-self: center;
     align-self: center;
+    font-size: medium;
 }
 #gmail {
     grid-area: gmail;
@@ -83,6 +85,9 @@ a:hover {
     justify-self: center;
     border: 1px solid rgba(0, 0, 0, 0.11);
     border-radius: 30px;
+}
+#serach-icon {
+    justify-self: center;
 }
 #search:hover {
     box-shadow: 1px 1px 5px gray;
